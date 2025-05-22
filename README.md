@@ -4,6 +4,27 @@
 
 A sleek and responsive one-page portfolio website showcasing my expertise in mechanical engineering, programming, and design. Built with modern web technologies to ensure optimal performance and user experience.
 
+## Roadmap
+
+- [x] Start with a basic layout and structure.
+- [ ] Implement Cards with Modal functionality for projects.
+- [ ] Add the Name and About Me section.
+  - Use bulleted list
+  - Add key information
+  - Add University Logo
+- [ ] Make Sections of cards
+  - [ ] Projects
+  - [ ] Skills
+  - [ ] Experience
+- [ ] Make the Testimonial section.
+- [ ] Add Contacts and Links to Projects
+
+Advanced Features:
+
+- [ ] Add filters for projects.
+- [ ] Add a contact form.
+- [ ] Connect with MechaPuzzle.
+
 ## 🚀 Tech Stack
 
 * **[React](https://reactjs.org/)**: JavaScript library for building user interfaces.

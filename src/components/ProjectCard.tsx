@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import frontMatter from 'front-matter';
 import ReactMarkdown from 'react-markdown';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -20,18 +20,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-
-interface ProjectCardProps {
-  projectPath: string;
-}
-
-interface ProjectData {
-  title: string;
-  description: string;
-  tags: string[];
-  date: string;
-  role: string;
-}
+import type { Project as ProjectData } from '@/types/project';
 
 export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
   const [data, setData] = useState<ProjectData>({
@@ -62,11 +51,12 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
         <div className="cursor-pointer h-full transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <Card className="overflow-hidden h-full flex flex-col border border-border/40 bg-card/50 backdrop-blur-sm">
             <div className="relative h-52 overflow-hidden">
-              {/* <img
-            src={project.thumbnail || '/placeholder.svg'}
-            alt={project.title}
-            className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          /> */}
+              <img
+                src={'projects/' + projectPath + '/' + (data.images?.[0][0] ?? '/placeholder.svg')}
+                alt={data.images?.[0][0]}
+                loading="lazy"
+                className="object-cover"
+              />
             </div>
             <CardContent className="flex-grow pt-6">
               <h3 className="text-xl font-semibold mb-2 text-foreground">{data.title}</h3>
@@ -89,21 +79,24 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
         </DialogHeader>
         <Carousel className="w-full">
           <CarouselContent>
-            {/* {data.images.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div className="relative aspect-video overflow-hidden rounded-md border border-border/40">
-                      <img
-                        src={image.src || '/placeholder.svg'}
-                        alt={image.alt}
-                        loading="lazy"
-                        className="object-cover"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm text-foreground p-3 text-sm font-medium">
-                        {image.alt}
-                      </div>
+            {data.images?.map((image, index) => {
+              const imagePath = 'projects/' + projectPath + '/' + image[0];
+              return (
+                <CarouselItem key={index}>
+                  <div className="relative aspect-video overflow-hidden rounded-md border border-border/40">
+                    <img
+                      src={imagePath || '/placeholder.svg'}
+                      alt={image[1]}
+                      loading="lazy"
+                      className="object-cover"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm text-foreground p-3 text-sm font-medium">
+                      {image[1]}
                     </div>
-                  </CarouselItem>
-                ))} */}
+                  </div>
+                </CarouselItem>
+              );
+            })}
           </CarouselContent>
           <CarouselPrevious className="left-2" />
           <CarouselNext className="right-2" />
@@ -115,7 +108,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
         <div className="mt-8 pt-6 border-t border-border/60">
           <h4 className="text-lg font-semibold mb-4 text-foreground">Tools & Technologies</h4>
           <div className="flex flex-wrap gap-2">
-            {data.tags.map((tag, i) => (
+            {data.tags?.map((tag, i) => (
               <div key={i} className="transition-all duration-300 hover:scale-105">
                 <Badge variant="outline" className="px-3 py-1.5 text-sm bg-secondary/30">
                   {tag}
