@@ -23,12 +23,16 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
    - [ ] hoist-mechanism
    - [ ] pressure-vesse
 - [ ] Add the Name and About Me section.
-  - Use bulleted list
-  - Add key information
-  - Add University Logo
+  - [x] ~~Use bulleted list~~
+  - [x] Add key information
+  - [x] Add the name
+  - [ ] Add University Logo
+  - [x] Add a photo
+  - [ ] Add links to my social media accounts
 - [ ] Make Sections of cards
-  - [ ] Projects
-  - [ ] Skills
+  - [x] Projects
+  - [x] Skills
+  - [x] Tools
   - [ ] Experience
 - [ ] Make the Testimonial section.
 - [ ] Add Contacts and Links to Projects
@@ -37,20 +41,28 @@ Tasks:
 
 - [ ] Get images for CFC from my father.
 - [ ] Get images for any other MEP project from my father.
-- [ ] Get images for TCCD from Abdullah.
-- [ ] Get images for Unio Powder.
+- [x] Get images for TCCD from Abdullah.
+- [x] Get images for Unio Powder.
+- [x] Get images for the Workshop
 - [ ] Write the description for each project.
 - [ ] Write the date for each project.
 - [ ] Make date appear
-- [ ] Finish the card design
+- [x] Finish the card design
 - [ ] Finish the modal design
 - [ ] Finish the carrousel design
-- [ ] Add the skills section with images for used software.
+- [x] Add the tools section with images for used software.
+- [ ] Add the skills section with skill levels and icons.
+- [ ] Finalize the tools and technologies used.
 - [ ] Add images for the Datasheet I made.
+- [ ] Run the simulation on Ansys and Add the results.
+- [ ] Add the website icon.
+- [ ] Add link to the Process Tree project.
+
 
 
 Advanced Features:
 
+- [ ] Make tabs and view transitions for the tabs.
 - [ ] Add filters for projects.
 - [ ] Add a contact form.
 - [ ] Connect with MechaPuzzle.

@@ -35,14 +35,16 @@ import {
   SiMermaid,
 } from '@icons-pack/react-simple-icons';
 
-// Anylogic
-// MS word
-// Illustrator
-// MS Excel
-// MS Powerpoint
+import { SiAdobeillustrator } from 'react-icons/si';
+import {
+  PiMicrosoftPowerpointLogo,
+  PiMicrosoftExcelLogo,
+  PiMicrosoftWordLogo,
+} from 'react-icons/pi';
+import { VscVscodeInsiders } from 'react-icons/vsc';
+import { SiCustomMatplotlib, SiCustomAnyLogic } from '@/icons/Logos';
+
 // MS Visio
-// VS Code
-// Matplotlib
 
 const PROJECTS = [
   '4-workshop',
@@ -76,7 +78,7 @@ const SKILLS = [
       <>
         <SiNumpy />
         <SiSympy />
-        {/* <SiMatplotlib /> */}
+        <SiCustomMatplotlib />
       </>
     ),
   },
@@ -110,9 +112,9 @@ const SKILLS = [
     image: <SiAnsys />,
   },
   {
-    title: 'Technical Writing',
+    title: 'Academic Writing',
     description:
-      'I use LaTeX and Overleaf to write technical documents and reports for my projects.',
+      'I use LaTeX and Overleaf to write important documents with academic writing standards. I also use Zotero for reference management.',
     image: (
       <>
         <SiLatex />
@@ -120,6 +122,30 @@ const SKILLS = [
         <SiZotero />
       </>
     ),
+  },
+  {
+    title: 'MS Office',
+    description:
+      'I use Microsoft Office for documentation and presentations. I also use Excel for data analysis and calculations.',
+    image: (
+      <>
+        <PiMicrosoftWordLogo />
+        <PiMicrosoftExcelLogo />
+        <PiMicrosoftPowerpointLogo />
+      </>
+    ),
+  },
+  {
+    title: 'VS Code',
+    description:
+      'I use Visual Studio Code as my main code editor. I also use it for web development and Python programming.',
+    image: <VscVscodeInsiders />,
+  },
+  {
+    title: 'AnyLogic',
+    description:
+      'I use AnyLogic for simulation modeling and analysis. I also use it for system dynamics and agent-based modeling.',
+    image: <SiCustomAnyLogic />,
   },
   {
     title: 'AutoCAD',
@@ -141,8 +167,8 @@ const SKILLS = [
       <>
         <SiFigma />
         <SiCanva />
-        {/* <SiAdobeillustrator /> */}
-        {/* <SiMicrosoftoffice /> */}
+        <SiAdobeillustrator />
+        <PiMicrosoftPowerpointLogo />
       </>
     ),
   },
