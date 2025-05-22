@@ -9,7 +9,9 @@ tags: [
 ]
 role: Vehicle Dynamics and Analysis
 images: [
-    [1.jpeg, Three-Wheel Fire Truck],
+    [2.png, Three-Wheel Fire Truck Assembly drawing],
+    [4.png, SFD and BMD of the chassis],
+    [3.png, Steering system assembly]
 ]
 ---
 
