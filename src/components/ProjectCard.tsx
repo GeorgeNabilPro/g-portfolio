@@ -33,7 +33,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('/g-portfolio/projects/' + projectPath + '/index.md')
+    fetch('./projects/' + projectPath + '/index.md')
       .then((response) => response.text())
       .then((markdownContent) => {
         const { attributes, body } = frontMatter(markdownContent);
