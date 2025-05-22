@@ -11,6 +11,16 @@ export default function App() {
         <p className="text-muted-foreground text-lg">
           Hi, I'm George Nabil, a passionate mechanical engineer
         </p>
+        <img src="/projects/test.jpg" />
+        <img src="projects/test.jpg" />
+        <img src="./projects/test.jpg" />
+        <img src="../projects/test.jpg" />
+        <img src="/public/projects/test.jpg" />
+        <img src="public/projects/test.jpg" />
+        <img src="./public/projects/test.jpg" />
+        <img src="../public/projects/test.jpg" />
+        <img src="/g-portfolio/projects/test.jpg" />
+        <img src="g-portfolio/projects/test.jpg" />
       </div>
       <Section
         title="Projects"
