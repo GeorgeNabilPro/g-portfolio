@@ -7,7 +7,21 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 ## Roadmap
 
 - [x] Start with a basic layout and structure.
-- [ ] Implement Cards with Modal functionality for projects.
+- [x] Implement Cards with Modal functionality for projects.
+- [ ] Add the following projects:
+   - [ ] datasheet-1
+   - [ ] hypercone
+   - [ ] process-tree
+   - [ ] tccd
+   - [ ] three-wheel
+   - [ ] trommel-screem
+   - [ ] cfd-on-formula
+   - [ ] workshop
+   - [ ] azha-mep
+   - [ ] unio-powder
+   - [ ] jack-screw
+   - [ ] hoist-mechanism
+   - [ ] pressure-vesse
 - [ ] Add the Name and About Me section.
   - Use bulleted list
   - Add key information
@@ -18,6 +32,22 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
   - [ ] Experience
 - [ ] Make the Testimonial section.
 - [ ] Add Contacts and Links to Projects
+
+Tasks:
+
+- [ ] Get images for CFC from my father.
+- [ ] Get images for any other MEP project from my father.
+- [ ] Get images for TCCD from Abdullah.
+- [ ] Get images for Unio Powder.
+- [ ] Write the description for each project.
+- [ ] Write the date for each project.
+- [ ] Make date appear
+- [ ] Finish the card design
+- [ ] Finish the modal design
+- [ ] Finish the carrousel design
+- [ ] Add the skills section with images for used software.
+- [ ] Add images for the Datasheet I made.
+
 
 Advanced Features:
 
