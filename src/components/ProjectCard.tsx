@@ -51,8 +51,8 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
     <Dialog>
       <DialogTrigger>
         <div className="cursor-pointer h-full transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-          <Card className="overflow-hidden h-full flex flex-col border border-border/40 bg-card/50 backdrop-blur-sm">
-            <div className="relative h-52 overflow-hidden">
+          <Card className="overflow-hidden h-full flex flex-col border border-border/40 bg-card/50 backdrop-blur-sm p-0">
+            <div className="relative h-52 overflow-hidden top-0">
               <img
                 src={
                   '/g-portfolio/projects/' +
@@ -65,11 +65,13 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
                 className="object-cover"
               />
             </div>
-            <CardContent className="flex-grow pt-6">
-              <h3 className="text-xl font-semibold mb-2 text-foreground">{data.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{data.description}</p>
+            <CardContent className="flex-grow">
+              <h3 className="text-left text-xl font-semibold mb-2 text-foreground">{data.title}</h3>
+              <p className="text-left text-muted-foreground text-sm line-clamp-2">
+                {data.description}
+              </p>
             </CardContent>
-            <CardFooter className="pt-0 pb-4">
+            <CardFooter className="pb-4">
               <Badge variant="secondary" className="font-medium text-xs">
                 {data.role}
               </Badge>
@@ -77,7 +79,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
           </Card>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-h-[90vh] overflow-y-auto !w-[90%] !max-w-[700px]">
         <DialogHeader className="border-b pb-4">
           <DialogTitle className="text-2xl font-bold text-foreground">{data.title}</DialogTitle>
           <DialogDescription className="text-base font-medium text-muted-foreground">

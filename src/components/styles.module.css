@@ -1,0 +1,11 @@
+
+.inline-icon svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid slategray;
+    padding: 4px;
+    border-radius: 4px;
+}
