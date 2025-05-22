@@ -33,7 +33,9 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('./projects/' + projectPath + '/index.md')
+    const filePath = `${import.meta.env.BASE_URL}` + 'projects/' + projectPath + '/index.md';
+    console.log('Fetching:', filePath);
+    fetch(filePath)
       .then((response) => response.text())
       .then((markdownContent) => {
         const { attributes, body } = frontMatter(markdownContent);
@@ -52,7 +54,12 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
           <Card className="overflow-hidden h-full flex flex-col border border-border/40 bg-card/50 backdrop-blur-sm">
             <div className="relative h-52 overflow-hidden">
               <img
-                src={'./projects/' + projectPath + '/' + (data.images?.[0][0] ?? 'placeholder.svg')}
+                src={
+                  '/g-portfolio/projects/' +
+                  projectPath +
+                  '/' +
+                  (data.images?.[0][0] ?? 'placeholder.svg')
+                }
                 alt={data.images?.[0][0]}
                 loading="lazy"
                 className="object-cover"
@@ -80,7 +87,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
         <Carousel className="w-full">
           <CarouselContent>
             {data.images?.map((image, index) => {
-              const imagePath = './projects/' + projectPath + '/' + image[0];
+              const imagePath = '/g-portfolio/projects/' + projectPath + '/' + image[0];
               return (
                 <CarouselItem key={index}>
                   <div className="relative aspect-video overflow-hidden rounded-md border border-border/40">

@@ -9,7 +9,6 @@ export default function Section({
   description: string;
   cards: string[];
 }) {
-  console.log(cards);
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="mb-16 text-center max-w-3xl mx-auto">
