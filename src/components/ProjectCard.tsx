@@ -33,7 +33,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('projects/' + projectPath + '/index.md')
+    fetch('./projects/' + projectPath + '/index.md')
       .then((response) => response.text())
       .then((markdownContent) => {
         const { attributes, body } = frontMatter(markdownContent);
@@ -52,7 +52,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
           <Card className="overflow-hidden h-full flex flex-col border border-border/40 bg-card/50 backdrop-blur-sm">
             <div className="relative h-52 overflow-hidden">
               <img
-                src={'projects/' + projectPath + '/' + (data.images?.[0][0] ?? '/placeholder.svg')}
+                src={'projects/' + projectPath + '/' + (data.images?.[0][0] ?? 'placeholder.svg')}
                 alt={data.images?.[0][0]}
                 loading="lazy"
                 className="object-cover"
@@ -106,7 +106,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
         </div>
 
         <div className="mt-8 pt-6 border-t border-border/60">
-          <h4 className="text-lg font-semibold mb-4 text-foreground">Tools & Technologies</h4>
+          <h4 className="text-lg font-semibold mb-4 text-foreground">Keywords</h4>
           <div className="flex flex-wrap gap-2">
             {data.tags?.map((tag, i) => (
               <div key={i} className="transition-all duration-300 hover:scale-105">
