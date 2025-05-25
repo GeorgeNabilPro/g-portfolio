@@ -25,16 +25,23 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 - [x] Add links to my social media accounts and other contact methods.
 - [x] Add University Logo in the Hero
 - [x] Implement an Image viewer for the images in the modal.
-- [ ] Finish the responsiveness problems
+- [x] Run the simulation on Ansys and Add the results.
+- [x] Get images for any other MEP project from my father.
+- [x] Add my image and the website description to the meta tags so that it appears in Facebook, Twitter, and Whatsapp.
+- [x] Add the website icon.
+- [x] Finish the responsiveness problems
+- [x] Make date appear
 - [ ] Add UI features like a gear in the heor and some gears in the footer.
-- [ ] Write the date and the descrption for each project.
-   - [ ] three-wheel
+- [ ] Add images for the Datasheet I made.
+- [ ] Get images for CFC from my father.
+- [ ] Write the date, descrption, and add more images for each project.
+   - [x] three-wheel
    - [ ] trommel-screem
    - [ ] cfd-on-formula
    - [ ] workshop
    - [ ] cfc-mep
    - [ ] union-powder
-   - [ ] jack-screw
+   - [ ] ~~jack-screw~~
    - [ ] hoist-mechanism
    - [ ] pressure-vessel
    - [ ] hypercone
@@ -42,35 +49,40 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
    - [ ] tccd
    - [ ] datasheet-1
    - [ ] jib-crane
-- [ ] Make date appear
 - [ ] Add the fallback image
 - [ ] Finalize the tools and technologies used.
-- [ ] Add images for the Datasheet I made.
-- [x] Run the simulation on Ansys and Add the results.
-- [ ] Get images for CFC from my father.
-- [x] Get images for any other MEP project from my father.
+  - [x] UI
+  - [ ] Content
 - [ ] Finish the modal design
 - [ ] Finish the carrousel design
-- [ ] Add the skills section with skill levels and icons.
+- [ ] Add the skills section
+  - [ ] UI
+  - [ ] Content
+  - [ ] Images
+- [ ]**Submit the portfolio**
+- [ ] Add the other projects section
+  - [ ] Wind shield wiper
+  - [ ] CV builder
+  - [ ] Crane lift design
+  - [ ] Gear testing design
+  - [ ] Jack screw design
+  - [ ] MEP 1
+  - [ ] MEP 2
+  - [ ] MEP 3
 - [ ] Make the Testimonial section.
   - [ ] Get a testimonial from Dr. Emad El-Kashef.
   - [ ] Get a testimonial from Dr. Emad El-Sherbiny.
   - [ ] Get a testimonial from Dr. Sahor.
-
-- [ ] Add the website icon.
+- [ ] Optimize images
+- [ ] Add some code splitting and dynamic imports.
 - [ ] Add link to the Process Tree project.
-- [ ] **Submit the portfolio**
-
-Advanced Features:
-
 - [ ] Make tabs and view transitions for the tabs.
 - [ ] Add filters for projects.
 - [ ] Add a contact form.
 - [ ] Connect with MechaPuzzle.
 - [ ] Add the experience section.
 - [ ] Implement a dark mode toggle.
-
-
+- [ ] Add smart animation for the hero section.
 
 ## 🚀 Tech Stack
 

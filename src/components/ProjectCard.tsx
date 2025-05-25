@@ -103,7 +103,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
             </Card>
           </div>
         </DialogTrigger>
-        <DialogContent className="max-h-[90vh] overflow-y-auto !w-[90%] !max-w-[700px]">
+        <DialogContent className="max-h-[90vh] overflow-y-auto !w-[90%] !max-w-[760px]">
           <DialogHeader className="pb-4">
             <DialogTitle className="text-2xl font-bold text-foreground">{data.title}</DialogTitle>
             <DialogDescription>
@@ -116,13 +116,13 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
           </DialogHeader>
 
           {/* Images */}
-          <Carousel className="w-full">
+          <Carousel className="overflow-hidden">
             <CarouselContent>
               {data.images?.map((image, index) => {
                 return (
                   <CarouselItem key={index}>
                     <div
-                      className="relative aspect-video overflow-hidden rounded-md border border-border/40"
+                      className="aspect-video overflow-hidden rounded-md border border-border/40 flex-col"
                       onClick={() => handleImageClick(index)}
                     >
                       <img
@@ -131,10 +131,10 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
                         loading="lazy"
                         className="object-contain"
                       />
-                      <div className="bg-background/80 backdrop-blur-sm text-foreground p-3 text-sm font-medium">
-                        {image[1]}
-                      </div>
                     </div>
+                    {/* <div className="bg-background/80 backdrop-blur-sm text-foreground p-3 text-sm font-medium">
+                      {image[1]}
+                    </div> */}
                   </CarouselItem>
                 );
               })}
@@ -143,7 +143,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
             <CarouselNext className="right-2 border-slate-800" />
           </Carousel>
 
-          <div className="prose max-w-none dark:prose-invert markdown text-primary">
+          <div className="prose max-w-full dark:prose-invert markdown text-primary">
             <ReactMarkdown>{content}</ReactMarkdown>
           </div>
 

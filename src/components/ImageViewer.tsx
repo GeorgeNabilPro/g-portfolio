@@ -132,13 +132,13 @@ export function ImageViewer({ images, currentIndex, isOpen, onClose }: ImageView
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent
-        className="w-screen h-screen bg-transparent !max-w-screen border-0 p-10 flex items-center flex-col justify-center"
+        className="w-screen h-screen bg-transparent !max-w-screen border-0 p-4 sm:p-10 flex items-center flex-col justify-center"
         onClick={(event) => {
           event.preventDefault();
           onClose();
         }}
       >
-        <div className="max-h-[90%] max-w-[90%] mx-auto transition-all duration-300">
+        <div className="sm:max-h-[90%] sm:max-w-[90%] mx-auto transition-all duration-300">
           <img
             src={currentImage[0]}
             alt={currentImage[1]}
