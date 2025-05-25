@@ -1,6 +1,6 @@
 # AI Context for This Project
 
-
+```text
 Here are some important information about me:
 - I am a student at Cairo University, Faculty of Engineering, Mechanical Design and Production Department.
 - I have experience in different fields rather than mechanical engineering such as:
@@ -23,3 +23,53 @@ I am a mechanical engineer who have a passion in
 - Mathematics
 - Programming
 - Science and Scientific Research 
+```
+
+## Generating content 
+
+I want the brief article to include the following:
+
+- Physical description of the project including some number like capacity, weight, dimensions, etc.
+- What is achieved in this project.
+- Methods used in the project.
+- What I did in the project.
+- What I learned from the project.
+- Further steps or future work.
+
+
+```text
+
+You are a professional technical writer. I will provide you with detailed information about one of my projects. Based on the information I give you, generate a concise and well-structured article that includes the following sections:
+
+1. Project Overview – Provide a clear physical description of the project, including quantitative details such as dimensions, weight, capacity, or other relevant specifications.
+2. Project Objectives & Outcomes – Summarize what the project aimed to achieve and what was accomplished.
+3. Methods & Techniques Used – Explain the main technical methods, tools, or processes used in the execution of the project.
+4. My Role & Contributions – Describe what I specifically did in the project, including any problem-solving, design, or leadership contributions.
+5. Key Learnings – Highlight the main skills or knowledge I gained from working on the project.
+6. Future Work or Next Steps – Suggest logical extensions, improvements, or planned future developments related to this project.
+
+
+Project 1:
+
+Three-Wheel Fire Truck
+
+- Imporant quantities: 
+    - Material  AISI 1010
+    - Length  2000 mm 
+    - Width  1100 mm 
+    - Weight of Body and chassis  1200 kg 
+    - Driver weight  100 kg  
+    - Number of drivers  1 
+    - Tank capacity  700 L 
+- We decided to design a three-wheel fire truck prototype, we aimed to achieve profitable price and a real effective solution, we did
+  - Chassis design (monocoque design)
+  - Transmission system
+  - Tank selection
+  - Vehicle dynamics analysis and parameters selection
+- I used these tools
+    - SolidWorks for modeling and assembly.
+    - Python for solving deflection equations.
+- I was responsible for the vehicle dynamics analysis, I did full research to make the best decisions, I also was responsible for the deflection analysis, I used Python to solve complex system of equations.
+- I learned a lot about vehicle dynamics, how to use Python for engineering calculations, and the fundamentals of parametrs selection for automotive design.
+
+```
