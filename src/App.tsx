@@ -3,204 +3,18 @@ import './App.css';
 import Section from './components/Section';
 import { HeroSection } from './components/Hero';
 import { ProjectCardWithModal } from './components/ProjectCard';
+import Tool from './components/Tool';
 import Skill from './components/Skill';
 
-import {
-  SiAnsys,
-  SiAutocad,
-  SiDassaultsystemes,
-  SiNumpy,
-  SiSympy,
-  SiPython,
-  SiJavascript,
-  SiNextdotjs,
-  SiReact,
-  SiTypescript,
-  SiCss,
-  SiVite,
-  SiHtml5,
-  SiTailwindcss,
-  SiLatex,
-  SiOverleaf,
-  SiZotero,
-  SiCplusplus,
-  SiC,
-  SiFigma,
-  SiCanva,
-  SiGithub,
-  SiPayloadcms,
-  SiMarkdown,
-  SiMdx,
-  SiObsidian,
-  SiMermaid,
-} from '@icons-pack/react-simple-icons';
+// import Gears from '@/components/Gears';
 
-import { SiAdobeillustrator } from 'react-icons/si';
-import {
-  PiMicrosoftPowerpointLogo,
-  PiMicrosoftExcelLogo,
-  PiMicrosoftWordLogo,
-} from 'react-icons/pi';
-import { VscVscodeInsiders } from 'react-icons/vsc';
-import { SiCustomMatplotlib, SiCustomAnyLogic } from '@/icons/Logos';
-
-// MS Visio
-
-const PROJECTS = [
-  '4-workshop',
-  '1-three-wheel',
-  '3-cfd-on-formula',
-  '2-trommel-screem',
-  '8-hoist-mechanism',
-  '11-process-tree',
-  '6-union-powder',
-  '12-tccd',
-  '10-hypercone',
-  '9-pressure-vessel',
-  '7-jack-screw',
-];
-
-const SKILLS = [
-  {
-    title: 'Python',
-    description:
-      'I use python to automate tasks and solve complex problems in everyday life and specially in engineering.',
-    image: (
-      <>
-        <SiPython />
-      </>
-    ),
-  },
-  {
-    title: 'Numpy, Sympy, Matplotlib',
-    description: 'These are my favorite tools for engineering calculations and data visualization.',
-    image: (
-      <>
-        <SiNumpy />
-        <SiSympy />
-        <SiCustomMatplotlib />
-      </>
-    ),
-  },
-  {
-    title: 'Web Development',
-    description:
-      'Web development is my hobby and a tool I use to showcase my work and do side projects.',
-    image: (
-      <>
-        <SiNextdotjs />
-        <SiTypescript />
-        <SiJavascript />
-        <SiCss />
-        <SiHtml5 />
-        <SiTailwindcss />
-        <SiVite />
-        <SiReact />
-        <SiPayloadcms />
-      </>
-    ),
-  },
-  {
-    title: '3D Modeling',
-    description:
-      'I use SOLIDOWRKS as my main CAD software to create 3D models and simulations for my engineering projects.',
-    image: <SiDassaultsystemes />,
-  },
-  {
-    title: 'Simulation',
-    description: 'I use ANSYS for FEA and CFD simulations to analyze and optimize my designs.',
-    image: <SiAnsys />,
-  },
-  {
-    title: 'Academic Writing',
-    description:
-      'I use LaTeX and Overleaf to write important documents with academic writing standards. I also use Zotero for reference management.',
-    image: (
-      <>
-        <SiLatex />
-        <SiOverleaf />
-        <SiZotero />
-      </>
-    ),
-  },
-  {
-    title: 'MS Office',
-    description:
-      'I use Microsoft Office for documentation and presentations. I also use Excel for data analysis and calculations.',
-    image: (
-      <>
-        <PiMicrosoftWordLogo />
-        <PiMicrosoftExcelLogo />
-        <PiMicrosoftPowerpointLogo />
-      </>
-    ),
-  },
-  {
-    title: 'VS Code',
-    description:
-      'I use Visual Studio Code as my main code editor. I also use it for web development and Python programming.',
-    image: <VscVscodeInsiders />,
-  },
-  {
-    title: 'AnyLogic',
-    description:
-      'I use AnyLogic for simulation modeling and analysis. I also use it for system dynamics and agent-based modeling.',
-    image: <SiCustomAnyLogic />,
-  },
-  {
-    title: 'AutoCAD',
-    description:
-      'I use AutoCAD for 2D drafting and MEP designs. I also use it for simple 3D modeling in some cases.',
-    image: <SiAutocad />,
-  },
-  {
-    title: 'Git and GitHub',
-    description:
-      'I use Git and GitHub to manage my projects and collaborate with others. I also use it to showcase my work.',
-    image: <SiGithub />,
-  },
-  {
-    title: 'Professional Presentation',
-    description:
-      'I use Figma, Adobe Illustrator, and Microsoft Office to create professional presentations and documents.',
-    image: (
-      <>
-        <SiFigma />
-        <SiCanva />
-        <SiAdobeillustrator />
-        <PiMicrosoftPowerpointLogo />
-      </>
-    ),
-  },
-  {
-    title: 'Markdown and MDX',
-    description:
-      'I use Markdown and MDX to write fast and easy documentation for my projects. I also use it to write blog posts and content in my websites.',
-    image: (
-      <>
-        <SiMarkdown />
-        <SiMdx />
-        <SiObsidian />
-        <SiMermaid />
-      </>
-    ),
-  },
-  {
-    title: 'C and C++',
-    description:
-      'I use C and C++ for other programming tasks and projects, and also I have some experience with embedded systems and embedded C',
-    image: (
-      <>
-        <SiCplusplus />
-        <SiC />
-      </>
-    ),
-  },
-];
+import { PROJECTS } from './data/projects';
+import { TOOLS } from './data/tools';
+import { SKILLS_SOFT, SKILLS_TECHNICAL } from './data/skills';
 
 export default function App() {
   return (
-    <article className="container mx-auto px-4 pt-0 pb-10">
+    <article className="container mx-auto pt-0 pb-10">
       <HeroSection />
       <Section title="Projects" description="Here are some of my projects that I have worked on.">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -215,18 +29,32 @@ export default function App() {
         title="Skills"
         description="A diversified skill set that I have acquired over the years."
       >
-        <ul></ul>
+        <h3 className="text-2xl mt-4 mb-4 text-left font-bold text-foreground">Technical Skills</h3>
+        <ul className="list-disc list-inside text-left">
+          {SKILLS_TECHNICAL.map((skill) => (
+            <Skill {...skill} key={skill.title} />
+          ))}
+        </ul>
+        <h3 className="text-2xl mt-6 mb-4 text-left font-bold text-foreground">Soft Skills</h3>
+        <ul className="list-disc list-inside text-left">
+          {SKILLS_SOFT.map((skill) => (
+            <Skill {...skill} key={skill.title} />
+          ))}
+        </ul>
       </Section>
       <Section
         title="Tools I Use"
         description="These are the tools I use to get my work done. I am always learning new tools and technologies."
       >
-        <ul className="list-disc list-inside text-left">
-          {SKILLS.map((skill) => (
-            <Skill {...skill} key={skill.title} />
+        <ul className="list-disc list-inside text-left grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+          {TOOLS.map((tool) => (
+            <Tool {...tool} key={tool.title} />
           ))}
         </ul>
       </Section>
+      {/* <div>
+        <Gears />
+      </div> */}
     </article>
   );
 }

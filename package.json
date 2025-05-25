@@ -2,8 +2,13 @@
   "homepage": "https://GeorgeNabilPro.github.io/g-portfolio/",
   "name": "g-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.1",
   "type": "module",
+  "author": {
+    "name": "George Nabil",
+    "email": "georgenabilpro@gmail.com"
+  },
+  "description": "A personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -16,6 +21,7 @@
     "@icons-pack/react-simple-icons": "^12.8.0",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tooltip": "^1.2.7",
     "@tailwindcss/vite": "^4.1.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

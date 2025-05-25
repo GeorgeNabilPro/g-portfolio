@@ -9,3 +9,40 @@
     padding: 4px;
     border-radius: 4px;
 }
+
+.inline-icon-green svg {
+        display: inline-block;
+    vertical-align: middle;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #22c55e;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #22C55E;
+    /* transition: transform 6s ease-in-out; */
+    /* transform-origin: center; */
+}
+
+/* svg:hover .st0{
+    animation: rotate-center infinite 6s linear;
+} */
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #000000;
+}
