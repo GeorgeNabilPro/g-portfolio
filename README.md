@@ -41,19 +41,21 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 - [x] Finish the modal design - first version
 - [x] Finish the carrousel design - first version
 - [x] ~~Get images for CFC from my father~~.
+- [ ] Fix the modal bug
+- [ ] Fix the carousel bug
+- [ ] Enhance the calling button
 - [ ] Write the date, descrption, and add more images for each project.
    - [x] three-wheel
    - [x] workshop
    - [x] cfd-on-formula
    - [x] trommel-screem
-   - [ ] mep-projects
-   - [ ] union-powder
+   - [x] mep-projects
+   - [x] union-powder
    - [ ] hoist-mechanism
    - [ ] pressure-vessel
    - [ ] hypercone
    - [ ] process-tree
    - [ ] tccd
-   - [ ] jib-crane
 - [ ] Add the fallback image
 - [ ] Finalize the tools and technologies used.
   - [x] UI
@@ -70,6 +72,7 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
   - [ ] Crane lift design
   - [ ] Gear testing design
   - [ ] Jack screw design
+  - [ ] jib-crane design
 - [ ] Make the Testimonial section.
   - [ ] Get a testimonial from Dr. Emad El-Kashef.
   - [ ] Get a testimonial from Dr. Emad El-Sherbiny.
@@ -202,5 +205,11 @@ Replace `yourusername` with your GitHub username.
 This project is licensed under the [MIT License](LICENSE)
 
 ## Important Links
+
+### Portfolio Examples
+
+- [Jack Stevens - Mechanical Engineer](https://johnduncanstevens.wixsite.com/portfolio)
+
+### Resources
 
 - The Gear component is from [sw1227/gear-svg](https://github.com/sw1227/gear-svg)

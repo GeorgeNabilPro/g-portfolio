@@ -39,7 +39,7 @@ I want the brief article to include the following:
 
 ```text
 
-You are a professional technical writer. I will provide you with detailed information about one of my projects. Based on the information I give you, generate a concise and well-structured article that includes the following sections:
+You are a professional technical writer. I will provide you with detailed information about one of my projects. Based on the information I give you, generate a concise and well-structured article that includes the following sections if applicable:
 
 1. Project Overview – Provide a clear physical description of the project, including quantitative details such as dimensions, weight, capacity, or other relevant specifications.
 2. Project Objectives & Outcomes – Summarize what the project aimed to achieve and what was accomplished.
@@ -48,7 +48,12 @@ You are a professional technical writer. I will provide you with detailed inform
 5. Key Learnings – Highlight the main skills or knowledge I gained from working on the project.
 6. Future Work or Next Steps – Suggest logical extensions, improvements, or planned future developments related to this project.
 
+Don't add key information that I don't mention in the project descriptions I will provide, don't assume anything that I didn't mention.  Don't use bullet lists so much, but use them when they are needed and when there are items to be listed
 
+
+Projects:
+
+```text
 Project 1:
 
 Three-Wheel Fire Truck
