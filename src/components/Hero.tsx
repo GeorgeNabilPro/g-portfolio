@@ -13,17 +13,6 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 const GearSvg = React.lazy(() => import('@/components/GearSvg'));
 
 export function HeroSection() {
-  const [scrollX, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const [hasCopied, setHasCopied] = useState(false);
 
   useEffect(() => {
