@@ -1,17 +1,66 @@
 ---
-title: Trommel Screen Full Design and Optimization.
-description: Trommel Screen Full Design and Optimization.
-date: 2023-10-01
+title: Mechanical Design of a 40-ton Trommel Screen
+description: Mechanical Design & Analysis of a Trommel Screen for Agricultural Applications
+date: April 2024 - May 2024
 tags: [Optimization, Mechanical Design, Manufacturing, Conceptual Design]
 images: [
     [1.png, Assembly of the trommel screen],
     [3.png, Contour plot for the efficiency of the trommel screen],
-    [4.png, Mesh design],
+    [4.png, ],
     [5.png, Some of the analysis we made]
 ]
 role: Team Leader
+team: 6
 ---
 
+## Project Overview
+
+This project involved the complete mechanical design and system analysis of a trommel screen, a rotating cylindrical sieve used to separate materials by size. Specifically designed for agricultural applications within the Egyptian market, the machine is intended to process materials such as compost, soil, seeds, and organic fertilizers.
+
+The final design specifies a trommel screen with a cylinder diameter of **1.1 meters** and a length of **2.75 meters**. It is engineered to handle a working capacity of **40 tons per hour** with a total estimated cylinder weight of 250 kg. The drum is set at an inclination angle of **7 degrees** to facilitate the movement of material. For structural integrity and functionality, the design incorporates three primary reinforcement rings, four longitudinal E-section support beams, and a system of rollers and bearings to ensure smooth rotation.
+
+
+### Project Objectives & Outcomes
+
+The primary objective was to engineer a trommel screen that is applicable, cost-effective, and efficient for the unique challenges of the Egyptian agricultural sector. Key goals included achieving high separation efficiency, ensuring the machine is durable enough for harsh working conditions (including dust, humidity, and corrosive materials), making it mobile, and designing it for ease of manufacturing and maintenance
+
+The project concluded with a highly successful design that met these objectives. A major outcome was a modular design featuring a customizable screen system, allowing the mesh to be easily changed to process different materials. The final design is projected to achieve a screening efficiency of over **90%**, a key performance benchmark.
+
+### Methods & Techniques Used
+
+A systematic approach was taken to the design, beginning with a comparative analysis of transmission systems. A **sprocket and chain drive** was selected over gear and belt drives for its reliability, high efficiency (up to 98%), and suitability for moderate shock loads and dusty environments. For the screening surface, a **woven wire crimp mesh** made of stainless steel was chosen for its high resistance to impact, corrosion, and wear from chemically active materials like compost.
+
+The project was underpinned by extensive engineering calculations and analysis.
+
+  * **Systems Analysis:** A mathematical model was used to determine that a 2.75-meter length was optimal for achieving the target 90% efficiency (see the plots above)
+  * **Kinematic Analysis:** Calculations were performed to establish the ideal rotational speed of **4.1 rad/sec** (approx. 39 RPM) to ensure proper material tumbling without centrifuging.
+  * **Load and Stress Analysis:** A comprehensive force analysis was conducted on all critical components. This included calculating the required torque (1280 N.m) and power (7.2 hp). Finite element analysis was performed on the E-section support beams to ensure they could withstand combined loads from material weight, centrifugal force, and torque, leading to a design with a factor of safety of 2.18.
+
+To handle the complex differential equations involved in the efficiency simulations and to visualize the results, I utilized **Python**. All project reports, calculations, and drawings were professionally documented using **LaTeX**, which enhanced the clarity and workflow of the project.
+
+### My Role & Contributions
+
+As the **Team Leader**, I was responsible for guiding the project from conception to successful completion. My duties included creating the **project plan**, **delegating and managing team tasks**, and **ensuring we met all milestones**. I took the lead in solving the most complex design challenges, making critical decisions on subsystem designs like the transmission and mesh configuration.
+
+My specific contributions included implementing a professional workflow by using **LaTeX** for all documentation. This significantly improved the quality and consistency of our reports. I also applied my technical skills by using **Python** to build simulation models for system analysis, which was crucial for optimizing the design parameters and validating our theoretical calculations.
+
+### Key Learnings
+
+This project proved to be an invaluable learning experience, providing me with practical skills that extend beyond theoretical knowledge.
+
+  * **Conceptual Design:** I learned how to translate a problem statement into a tangible engineering solution, making informed design decisions by weighing the pros and cons of different technologies and materials.
+  * **Complex Assemblies:** I gained significant experience in designing and analyzing interconnected mechanical systems, understanding the complex load paths and dependencies between components like the frame, drum, and drive system.
+  * **Advanced Research:** I honed my ability to use Google Search and academic databases to effectively find and synthesize information from diverse sources, including scientific papers, manufacturer catalogs, and existing design patents.
+  * **Professional Documentation:** I mastered the use of LaTeX to produce industry-standard technical documents, a skill that enhances clarity, precision, and professionalism in engineering communication.
+
+
+### Future Work or Next Steps
+
+The completed design serves as a robust foundation, but several enhancements were identified for future development.
+
+1.  **Control System:** A simple control system, likely employing a Variable Frequency Driver (VFD), could be implemented to adjust the motor speed. This would allow the operator to fine-tune the screening parameters for different materials, maximizing efficiency.
+2.  **Water Spray System:** For applications involving washing or dust suppression, a water spray system could be integrated. This would include a pump, nozzles, and piping to deliver a controlled flow of water inside the drum.
+3.  **Screen Mesh Cleaner:** To maintain high efficiency when processing wet or sticky materials, a self-cleaning mechanism such as a fixed, stiff-bristled brush could be added to the top of the drum to clear the mesh openings as it rotates.
 
 ```py
 
