@@ -3,7 +3,9 @@ import type React from 'react';
 import styles from './styles.module.css';
 import { cn } from '@/lib/utils';
 
-export default function Tool({
+import { TOOLS } from '@/data/tools';
+
+export function Tool({
   title,
   description,
   image,
@@ -31,5 +33,15 @@ export default function Tool({
         <span className="text-muted-foreground">{description}</span>
       </div>
     </li>
+  );
+}
+
+export default function Tools() {
+  return (
+    <ul className="list-disc list-inside text-left grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+      {TOOLS.map((tool) => (
+        <Tool {...tool} key={tool.title} />
+      ))}
+    </ul>
   );
 }

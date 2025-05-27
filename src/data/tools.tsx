@@ -40,6 +40,7 @@ import {
   SiCustomAnyLogic,
   SiCustomMITCalc,
   SiCustomMatlab,
+  SiCustomVisio,
 } from '@/icons/Logos';
 
 // MS Visio
@@ -130,7 +131,7 @@ const TOOLS = [
       <>
         <PiMicrosoftWordLogo />
         <PiMicrosoftExcelLogo />
-        <PiMicrosoftPowerpointLogo />
+        <SiCustomVisio />
       </>
     ),
   },

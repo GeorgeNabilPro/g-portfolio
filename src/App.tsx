@@ -3,16 +3,16 @@ import './App.css';
 import Section from './components/Section';
 import { HeroSection } from './components/Hero';
 import { ProjectCardWithModal } from './components/ProjectCard';
-import Tool from './components/Tool';
+
 import Skill from './components/Skill';
 import React from 'react';
 
 // import Gears from '@/components/Gears';
 
 import { PROJECTS } from './data/projects';
-import { TOOLS } from './data/tools';
 import { SKILLS_SOFT, SKILLS_TECHNICAL } from './data/skills';
 
+const Tools = React.lazy(() => import('./components/Tools'));
 const GearSvg = React.lazy(() => import('./components/GearSvg'));
 
 export default function App() {
@@ -52,25 +52,9 @@ export default function App() {
           title="Tools I Use"
           description="These are the tools I use to get my work done. I am always learning new tools and technologies."
         >
-          <ul className="list-disc list-inside text-left grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
-            {TOOLS.map((tool) => (
-              <Tool {...tool} key={tool.title} />
-            ))}
-          </ul>
+          <Tools />
         </Section>
       </article>
-      {/* <div>
-        <GearSvg
-          showCircle={false}
-          module={2}
-          teethNumber={40}
-          scale={10}
-          // pressureAngle={10}
-          fillColor="#f8f9fa"
-          strokeColor="black"
-        />
-      </div> */}
-
       <footer className="relative h-40 max-h-40 overflow-hidden">
         <div className="absolute pt-2 left-1/2 -translate-x-1/2">
           <GearSvg

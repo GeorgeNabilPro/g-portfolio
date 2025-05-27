@@ -169,7 +169,7 @@ function CarouselPrevious({
   return (
     <Button
       data-slot="carousel-previous"
-      variant={variant}
+      variant={canScrollPrev ? variant : 'secondary'}
       size={size}
       className={cn(
         'absolute size-8 rounded-full',
@@ -178,8 +178,16 @@ function CarouselPrevious({
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
         className,
       )}
-      disabled={!canScrollPrev}
-      onClick={scrollPrev}
+      // disabled={!canScrollPrev}
+      onClick={
+        canScrollPrev
+          ? (event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              scrollPrev();
+            }
+          : undefined
+      }
       {...props}
     >
       <ArrowLeft />
@@ -208,8 +216,16 @@ function CarouselNext({
           : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
         className,
       )}
-      disabled={!canScrollNext}
-      onClick={scrollNext}
+      // disabled={!canScrollNext}
+      onClick={
+        canScrollNext
+          ? (event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              scrollNext();
+            }
+          : undefined
+      }
       {...props}
     >
       <ArrowRight />

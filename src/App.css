@@ -47,3 +47,14 @@
   border-radius: 4px;
   word-wrap: break-word;
 }
+
+.markdown .katex-html {
+  display: none;
+}
+
+.markdown li > ul,
+.markdown li > ol {
+  padding-left: 1rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

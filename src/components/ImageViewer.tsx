@@ -135,7 +135,10 @@ export function ImageViewer({ images, currentIndex, isOpen, onClose }: ImageView
         className="w-screen h-screen bg-transparent !max-w-screen border-0 p-4 sm:p-10 flex items-center flex-col justify-center"
         onClick={(event) => {
           event.preventDefault();
-          onClose();
+          event.stopPropagation();
+          setTimeout(() => {
+            onClose();
+          }, 0);
         }}
       >
         <div className="sm:max-h-[90%] sm:max-w-[90%] mx-auto transition-all duration-300">

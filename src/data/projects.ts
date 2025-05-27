@@ -1,15 +1,15 @@
 const PROJECTS = [
   '4-workshop',
-  '1-three-wheel',
-  '3-cfd-on-formula',
   '2-trommel-screem',
-  '8-hoist-mechanism',
-  '11-process-tree',
+  '5-mep',
+  '3-cfd-on-formula',
   '6-union-powder',
   '12-tccd',
+  '11-process-tree',
+  '1-three-wheel',
+  '8-hoist-mechanism',
   '10-hypercone',
   '9-pressure-vessel',
-  '5-mep',
 ];
 
 const OTHER_PROJECTS = [

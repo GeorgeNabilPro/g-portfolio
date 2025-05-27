@@ -158,8 +158,7 @@ export function HeroSection() {
                     <button
                       className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-green-500"
                       onClick={() => {
-                        navigator.clipboard.writeText('01014374579');
-                        setHasCopied(true);
+                        window.location.href = 'tel:+2001014374579';
                       }}
                     >
                       <SiWhatsapp size={24} />

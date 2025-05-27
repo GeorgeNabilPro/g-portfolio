@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import frontMatter from 'front-matter';
-import ReactMarkdown from 'react-markdown';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Users, KeyRound, ExternalLink, UserCheck } from 'lucide-react';
@@ -24,6 +23,7 @@ import {
 } from '@/components/ui/carousel';
 import type { Project as ProjectData } from '@/types/project';
 import { cn } from '@/lib/utils';
+const Markdown = React.lazy(() => import('./Markdown'));
 
 export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
   const [data, setData] = useState<ProjectData>({
@@ -168,9 +168,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
             <CarouselNext className="right-2 border-slate-800" />
           </Carousel>
 
-          <div className="prose max-w-full dark:prose-invert markdown text-primary">
-            <ReactMarkdown>{content}</ReactMarkdown>
-          </div>
+          <Markdown content={content} />
 
           <div className="mt-8 pt-6 border-t border-border/60">
             <IconText
