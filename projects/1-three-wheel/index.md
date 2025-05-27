@@ -8,6 +8,7 @@ tags: [
     Deflection Analysis,
 ]
 role: Team member
+team: 6
 images: [
     [2.png, Three-Wheel Fire Truck Assembly drawing],
     [4.png, SFD and BMD of the chassis],
