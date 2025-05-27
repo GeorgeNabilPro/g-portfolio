@@ -1,7 +1,7 @@
 ---
 title: Hypercone
 description:  A software with a GUI that calculates the unfolding curves of a general  cone, The final application has uses in sheet metal working
-date: 2023-10-01
+date: July 2022 – August 2022
 tags: [
     Mathematical Modeling,
     Surfaces,

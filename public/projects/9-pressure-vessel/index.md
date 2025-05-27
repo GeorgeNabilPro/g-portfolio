@@ -1,13 +1,14 @@
 ---
 title: Pressure Vessel Design
 description: Design of pressure vessels using ASME Boiler and Pressure Vessel Code and with variable geometry and pressure.
-date: 2025-5
+date: May 2025
 tags: [
     Pressure Vessels,
     ASME,
     Programming,
 ]
-role: 
+role: Team Member
+team: 5
 images: [
     [1.png, Curve shows how thickness changes with different parameters],
     [2.png, FEA simulation of a pressure vessel to compare with the analytical solution], 
