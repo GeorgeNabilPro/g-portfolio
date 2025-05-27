@@ -6,8 +6,10 @@ export interface ProjectImage {
 export interface Project {
   title: string;
   description: string;
-  role: string;
+  role?: string;
+  date?: string;
   tags?: string[];
-  date: string;
   images?: string[][];
+  team?: number;
+  links?: string[] | string[][];
 }

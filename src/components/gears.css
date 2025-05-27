@@ -1,38 +1,12 @@
-          /* Define the rotation animation */
-          @keyframes rotateGear {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
+.animate-rotate{
+  animation: rotate-center 90s linear infinite;
+}
 
-          /* Apply the animation to each gear on SVG hover */
-          .gears-svg:hover .gear-path {
-            animation: rotateGear 2s linear infinite;
-          }
-
-          /* Style for the gears */
-          .gear-path {
-            fill: #6c757d; /* Bootstrap secondary color */
-            stroke: #343a40; /* Bootstrap dark color */
-            stroke-width: 2;
-            transform-origin : center;
-          }
-
-          .gears-svg-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background-color: #f8f9fa; /* Light background for better visibility */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-family: sans-serif; /* Added a default font for the heading */
-          }
-
-          .gears-svg-container h1 {
-            margin-bottom: 20px;
-            color: #343a40;
-          }
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

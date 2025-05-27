@@ -9,7 +9,7 @@ const PROJECTS = [
   '12-tccd',
   '10-hypercone',
   '9-pressure-vessel',
-  '7-jack-screw',
+  '5-mep',
 ];
 
 const OTHER_PROJECTS = [
