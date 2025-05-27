@@ -31,30 +31,33 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 - [x] Add the website icon.
 - [x] Finish the responsiveness problems
 - [x] Make date appear
-- [ ] Add UI features like a gear in the heor and some gears in the footer.
-- [ ] Add images for the Datasheet I made.
-- [ ] Get images for CFC from my father.
+- [x] Add UI features like a gear in the hero and some gears in the footer.
+  - [x] Make the Gear component with configurable geometry and colors.
+  - [x] Animate Gear Components
+  - [x] Position the gears in the hero and footer.
+- [x] Add team size UI to the project cards.
+- [x] Add links UI to the project cards.
+- [x] Add icons to role, date, tags, and team size.
+- [x] Finish the modal design - first version
+- [x] Finish the carrousel design - first version
+- [x] ~~Get images for CFC from my father~~.
 - [ ] Write the date, descrption, and add more images for each project.
    - [x] three-wheel
-   - [ ] trommel-screem
-   - [ ] cfd-on-formula
-   - [ ] workshop
-   - [ ] cfc-mep
+   - [x] workshop
+   - [x] cfd-on-formula
+   - [x] trommel-screem
+   - [ ] mep-projects
    - [ ] union-powder
-   - [ ] ~~jack-screw~~
    - [ ] hoist-mechanism
    - [ ] pressure-vessel
    - [ ] hypercone
    - [ ] process-tree
    - [ ] tccd
-   - [ ] datasheet-1
    - [ ] jib-crane
 - [ ] Add the fallback image
 - [ ] Finalize the tools and technologies used.
   - [x] UI
   - [ ] Content
-- [ ] Finish the modal design
-- [ ] Finish the carrousel design
 - [ ] Add the skills section
   - [ ] UI
   - [ ] Content
@@ -62,13 +65,11 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 - [ ]**Submit the portfolio**
 - [ ] Add the other projects section
   - [ ] Wind shield wiper
+  - [ ] Data sheet for Mechanical Design
   - [ ] CV builder
   - [ ] Crane lift design
   - [ ] Gear testing design
   - [ ] Jack screw design
-  - [ ] MEP 1
-  - [ ] MEP 2
-  - [ ] MEP 3
 - [ ] Make the Testimonial section.
   - [ ] Get a testimonial from Dr. Emad El-Kashef.
   - [ ] Get a testimonial from Dr. Emad El-Sherbiny.
@@ -199,3 +200,7 @@ Replace `yourusername` with your GitHub username.
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE)
+
+## Important Links
+
+- The Gear component is from [sw1227/gear-svg](https://github.com/sw1227/gear-svg)
