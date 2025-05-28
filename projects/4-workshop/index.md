@@ -17,6 +17,9 @@ images: [
     [1.jpg, Me while presenting],
     [3.jpg, Students during the workshop],
     [4.jpg, Students during the workshop],
+    [2.png, Roadmap of the workshop],
+    [5.jpg, A Mechanical Design Projects Flowchart that I have developed],
+    [6.png, An example slide from the workshop content (DFMA session)]
 ]
 role: Committee Head
 team: 10
