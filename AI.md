@@ -78,3 +78,24 @@ Three-Wheel Fire Truck
 - I learned a lot about vehicle dynamics, how to use Python for engineering calculations, and the fundamentals of parametrs selection for automotive design.
 
 ```
+
+Skills
+
+```
+Mathematical Modeling: I always use Mathematical modeling to solve engineering problems, I also consider doing that before turing to code to implement these models and get results
+
+Research and Development: I do a lot of research to find solutions, learn about the latest technologies and methods, and choose best solution from available options. I also do development of ideas to customize solutions solutions, combine them, or create totally new solutions.
+
+Problem Solving: in the past years I developed a framework for me to solve problems in the most efficient, effective, consistent, and sustainable way I can. From time to time I add new techniques, methods, and tools to this framework to make it more powerful and useful.
+
+Programming: I learned programming from a young age and I practice programming in many applications like engineering calculations and plotting, automation, web scraping, simple data analysis, and web development. I use Python and JavaScript as my main programming languages
+
+Manufacturing: I gained good amount of knowledge about manufacturing processes and manufacturing systems. I consider manufacturing to be my passion and I love to learn more about it. 
+
+Mechanical Design: I gained a lot of experience in mechanical design through my projects and the workshop that I did. I went deeper with more advanced topics of mechanical design like DFX (like DFM, DFA, etc.), conceptual design, optimization of mechanical systems, and more. I combine all the tools in my toolbox to work on mechanical design problems.
+
+Academic Writing: I use LaTeX to write all the importand documents, however, LaTeX is just a tool not a skill in itself. I love to write in a clear, concise, organized, and professional way and replicated the writing styles of research papers and textbooks in the documents I write.
+
+
+
+

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import frontMatter from 'front-matter';
+import { Calendar, Users, KeyRound, ExternalLink, UserCheck } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Users, KeyRound, ExternalLink, UserCheck } from 'lucide-react';
-
-import { ImageViewer } from './ImageViewer';
-
+import { Skeleton } from '@/components/ui/skeleton';
 import {
   Dialog,
   DialogContent,
@@ -21,8 +21,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+
+import { ImageViewer } from './ImageViewer';
 import type { Project as ProjectData } from '@/types/project';
-import { cn } from '@/lib/utils';
+
 const Markdown = React.lazy(() => import('./Markdown'));
 
 export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
@@ -167,8 +169,9 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
             <CarouselPrevious className="left-2 border-slate-800" />
             <CarouselNext className="right-2 border-slate-800" />
           </Carousel>
-
-          <Markdown content={content} />
+          <Suspense fallback={<MarkdownSkeleton />}>
+            <Markdown content={content} />
+          </Suspense>
 
           <div className="mt-8 pt-6 border-t border-border/60">
             <IconText
@@ -219,3 +222,13 @@ function IconText({
     </>
   );
 }
+
+const MarkdownSkeleton = () => (
+  <div className="space-y-2">
+    <Skeleton className="h-4 w-full" />
+    <Skeleton className="h-4 w-full" />
+    <Skeleton className="h-4 w-full" />
+    <Skeleton className="h-4 w-full" />
+    <Skeleton className="h-4 w-[30%]" />
+  </div>
+);

@@ -10,7 +10,9 @@ export default function Section({
   return (
     <section className="container mx-auto py-8 px-8">
       <div className="mb-8 mx-auto">
-        <h2 className="text-3xl font-bold mb-4 md:text-4xl text-foreground">{title}</h2>
+        <h2 className="text-3xl font-bold mb-4 md:text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-slate-600 w-max">
+          {title}
+        </h2>
         <div className="h-1 w-20 bg-primary mb-6"></div>
         <p className="text-muted-foreground text-lg">{description}</p>
       </div>

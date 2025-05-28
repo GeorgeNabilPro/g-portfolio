@@ -26,7 +26,7 @@ export default function Skill({
           {image}
         </span>
       )}
-      <div>
+      <div className="max-w-[80ch]">
         <strong className="font-semibold text-foreground pr-2">{title}</strong>
         <span className="text-muted-foreground">{description}</span>
       </div>

@@ -6,10 +6,10 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 
 ## Roadmap
 
+- [x] Initiate the appliation with Vite, Tailwind CSS, and shadcn/ui.
 - [x] Start with a basic layout and structure.
 - [x] Implement Cards with Modal functionality for projects.
 - [x] Implement the hero section
-  - [x] ~~Use bulleted list~~
   - [x] Add key information
   - [x] Add the name
   - [x] Add a photo
@@ -40,31 +40,39 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
 - [x] Add icons to role, date, tags, and team size.
 - [x] Finish the modal design - first version
 - [x] Finish the carrousel design - first version
-- [x] ~~Get images for CFC from my father~~.
-- [ ] Fix the modal bug
-- [ ] Fix the carousel bug
-- [ ] Enhance the calling button
-- [ ] Write the date, descrption, and add more images for each project.
+- [x] Fix the modal bug
+- [x] Fix the carousel bug
+- [x] Enhance the calling button
+- [x] Add some code splitting and dynamic imports.
+- [x] Add link to the Process Tree project.
+- [x] Use skeleton to prevent Modal loading issues.
+- [x] Add the skills section content and icons
+- [ ] Write the data and descrption for the project
    - [x] three-wheel
    - [x] workshop
    - [x] cfd-on-formula
    - [x] trommel-screem
    - [x] mep-projects
    - [x] union-powder
+   - [x] process-tree
+   - [x] tccd
    - [ ] hoist-mechanism
    - [ ] pressure-vessel
    - [ ] hypercone
-   - [ ] process-tree
-   - [ ] tccd
 - [ ] Add the fallback image
 - [ ] Finalize the tools and technologies used.
   - [x] UI
   - [ ] Content
-- [ ] Add the skills section
+- [ ] Fix the Trommel Screem project image (the latex is not rendered correctly)
+- [ ] Finalize the projects content and add images
+- [ ] Finalize the skills section
+- [ ] Add the email button
+- [ ] **Submit the portfolio**
+- [ ] Add the new skills section
   - [ ] UI
   - [ ] Content
   - [ ] Images
-- [ ]**Submit the portfolio**
+- [ ] Make the mini projects UI
 - [ ] Add the other projects section
   - [ ] Wind shield wiper
   - [ ] Data sheet for Mechanical Design
@@ -72,21 +80,30 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
   - [ ] Crane lift design
   - [ ] Gear testing design
   - [ ] Jack screw design
-  - [ ] jib-crane design
+  - [ ] Jib crane design
 - [ ] Make the Testimonial section.
   - [ ] Get a testimonial from Dr. Emad El-Kashef.
   - [ ] Get a testimonial from Dr. Emad El-Sherbiny.
   - [ ] Get a testimonial from Dr. Sahor.
 - [ ] Optimize images
-- [ ] Add some code splitting and dynamic imports.
-- [ ] Add link to the Process Tree project.
 - [ ] Make tabs and view transitions for the tabs.
 - [ ] Add filters for projects.
 - [ ] Add a contact form.
-- [ ] Connect with MechaPuzzle.
 - [ ] Add the experience section.
 - [ ] Implement a dark mode toggle.
 - [ ] Add smart animation for the hero section.
+- [ ] Connect with MechaPuzzle.
+- [ ] Add download files UI and download links for Google Drive (see https://chatgpt.com/c/68366ffa-e85c-8008-82f0-f4c6c5c1f7ed)
+
+
+## Future Projects
+
+1. Injection Molding Design, Simulation, and Analysis
+2. Manufacturing of a Gearbox model
+3. Robotic Arm Design, Simulation, and Manufacturing
+4. Thermal Analysis of Machining Process
+5. Machining of Complex Geometries using CNC and MasterCAM
+6. Mecha Puzzle - A platform for mechanical engineering students
 
 ## 🚀 Tech Stack
 
