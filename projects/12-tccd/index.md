@@ -13,8 +13,8 @@ role: Team Vice-Leader
 team: 10
 images: [
     [1.png, Simulation of the production line],
-    [5.png, We earned the 3rd place at the 11th Undergraduate Engineering Mathematics Research Forum - Cairo University],
-    [6.png, Image for the team]
+    [5.jpg, We earned the 3rd place at the 11th Undergraduate Engineering Mathematics Research Forum - Cairo University],
+    [7.jpg, Image for the team]
 ]
 ---
 
