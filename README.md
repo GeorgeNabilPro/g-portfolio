@@ -59,15 +59,15 @@ A sleek and responsive one-page portfolio website showcasing my expertise in mec
    - [ ] hoist-mechanism
    - [ ] pressure-vessel
    - [ ] hypercone
-- [ ] Add the fallback image
-- [ ] Finalize the tools and technologies used.
+- [x] Finalize the tools and technologies used.
   - [x] UI
-  - [ ] Content
+  - [x] Content
+- [x] Finalize the skills section
+- [x] **Submit the portfolio**
+- [x] Add the email button
+- [ ] Add the fallback image
 - [ ] Fix the Trommel Screem project image (the latex is not rendered correctly)
 - [ ] Finalize the projects content and add images
-- [ ] Finalize the skills section
-- [ ] Add the email button
-- [ ] **Submit the portfolio**
 - [ ] Add the new skills section
   - [ ] UI
   - [ ] Content

@@ -62,7 +62,7 @@ export function ProjectCardWithModal({ projectPath }: { projectPath: string }) {
             // Ensure each image is an array with at least one element
             return Array.isArray(image)
               ? ['/g-portfolio/projects/' + projectPath + '/' + image[0], image[1] || '']
-              : ['placeholder.svg', ''];
+              : ['/g-portfolio/placeholder.png', ''];
           });
         }
         setData(attributes as ProjectData);
@@ -223,12 +223,14 @@ function IconText({
   );
 }
 
-const MarkdownSkeleton = () => (
-  <div className="space-y-2">
-    <Skeleton className="h-4 w-full" />
-    <Skeleton className="h-4 w-full" />
-    <Skeleton className="h-4 w-full" />
-    <Skeleton className="h-4 w-full" />
-    <Skeleton className="h-4 w-[30%]" />
-  </div>
-);
+function MarkdownSkeleton() {
+  return (
+    <div className="space-y-2">
+      <Skeleton className="h-4 w-full" />
+      <Skeleton className="h-4 w-full" />
+      <Skeleton className="h-4 w-full" />
+      <Skeleton className="h-4 w-full" />
+      <Skeleton className="h-4 w-[30%]" />
+    </div>
+  );
+}

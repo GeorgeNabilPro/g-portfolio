@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
-// import { Button } from '@/components/ui/button';
-import {
-  // Download, Mail,
-  // FileText,
-  Github,
-  Linkedin,
-} from 'lucide-react';
-import { SiWhatsapp } from '@icons-pack/react-simple-icons';
+import { Github, Linkedin } from 'lucide-react';
+import { SiWhatsapp, SiGmail } from '@icons-pack/react-simple-icons';
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
@@ -148,7 +142,6 @@ export function HeroSection() {
               >
                 <Github size={24} />
               </a>
-
               <TooltipProvider>
                 <Tooltip delayDuration={0}>
                   <TooltipTrigger
@@ -177,7 +170,36 @@ export function HeroSection() {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-
+              <TooltipProvider>
+                <Tooltip delayDuration={0}>
+                  <TooltipTrigger
+                  // onClick={(event) => event.preventDefault()}
+                  // onPointerDown={(event) => event.preventDefault()}
+                  >
+                    <button
+                      className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-red-500"
+                      onClick={() => {
+                        window.location.href = 'mailto:George.Abraham03@eng-st.cu.edu.eg';
+                        navigator.clipboard.writeText('George.Abraham03@eng-st.cu.edu.eg');
+                        setHasCopied(true);
+                      }}
+                    >
+                      <SiGmail size={24} />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent
+                    onPointerDownOutside={(event) => {
+                      event.preventDefault();
+                    }}
+                  >
+                    {hasCopied ? (
+                      <span className="text-green-500">Email address copied!</span>
+                    ) : (
+                      <span>Click to copy George.Abraham03@eng-st.cu.edu.eg</span>
+                    )}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               {/* <a
                 href="#"
                 className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"

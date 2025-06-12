@@ -1,25 +1,198 @@
-export function SiCustomMatplotlib() {
-  return (
-    <svg width="180" height="180" stroke="gray" viewBox="0 0 180 180" fill="none">
-      <g strokeWidth="10">
-        <circle stroke="currentColor" cx="90" cy="90" r="88" />
-        <circle stroke="currentColor" cx="90" cy="90" r="66" />
-        <circle stroke="currentColor" cx="90" cy="90" r="44" />
-        <circle stroke="currentColor" cx="90" cy="90" r="22" />
-        <path stroke="currentColor" d="m90,2v176m62-26-124-124m124,0-124,124m150-62H2" />
-      </g>
-      <g opacity=".8">
-        <path fill="currentColor" d="m90,90h18a18,18 0 0,0 0-5z" />
-        <path fill="currentColor" d="m90,90 34-43a55,55 0 0,0-15-8z" />
-        <path fill="currentColor" d="m90,90-16-72a74,74 0 0,0-31,15z" />
-        <path fill="currentColor" d="m90,90-58-28a65,65 0 0,0-5,39z" />
-        <path fill="currentColor" d="m90,90-33,16a37,37 0 0,0 2,5z" />
-        <path fill="currentColor" d="m90,90-10,45a46,46 0 0,0 18,0z" />
-        <path fill="currentColor" d="m90,90 46,58a74,74 0 0,0 12-12z" />
-      </g>
-    </svg>
-  );
-}
+import React from 'react';
+import type { IconType } from '@icons-pack/react-simple-icons';
+
+type SiCustomIconProps = React.ComponentPropsWithoutRef<'svg'> & {
+  /**
+   * The title provides an accessible short text description to the SVG
+   */
+  title?: string;
+  /**
+   * Hex color or color name or "default" to use the default hex for each icon
+   */
+  color?: string;
+  /**
+   * The size of the Icon.
+   */
+  size?: string | number;
+};
+
+const defaultColor = '#C22127';
+
+const SiCustomMatplotlib: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+  function SiAerospike(
+    { title = 'Matplotlib', color = 'currentColor', size = 24, ...others },
+    ref,
+  ) {
+    if (color === 'default') {
+      color = defaultColor;
+    }
+
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        width="180"
+        height="180"
+        stroke="gray"
+        viewBox="0 0 180 180"
+        ref={ref}
+        {...others}
+      >
+        <title>{title}</title>
+        <g strokeWidth="10">
+          <circle stroke="currentColor" cx="90" cy="90" r="88" />
+          <circle stroke="currentColor" cx="90" cy="90" r="66" />
+          <circle stroke="currentColor" cx="90" cy="90" r="44" />
+          <circle stroke="currentColor" cx="90" cy="90" r="22" />
+          <path stroke="currentColor" d="m90,2v176m62-26-124-124m124,0-124,124m150-62H2" />
+        </g>
+        <g opacity=".8">
+          <path fill="currentColor" d="m90,90h18a18,18 0 0,0 0-5z" />
+          <path fill="currentColor" d="m90,90 34-43a55,55 0 0,0-15-8z" />
+          <path fill="currentColor" d="m90,90-16-72a74,74 0 0,0-31,15z" />
+          <path fill="currentColor" d="m90,90-58-28a65,65 0 0,0-5,39z" />
+          <path fill="currentColor" d="m90,90-33,16a37,37 0 0,0 2,5z" />
+          <path fill="currentColor" d="m90,90-10,45a46,46 0 0,0 18,0z" />
+          <path fill="currentColor" d="m90,90 46,58a74,74 0 0,0 12-12z" />
+        </g>
+      </svg>
+    );
+  },
+);
+
+// const SiAerospike: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+//   function SiAerospike({ title = 'Aerospike', color = 'currentColor', size = 24, ...others }, ref) {
+//     if (color === 'default') {
+//       color = defaultColor;
+//     }
+
+//     return (
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={size}
+//         height={size}
+//         fill={color}
+//         viewBox="0 0 24 24"
+//         ref={ref}
+//         {...others}
+//       >
+//         <title>{title}</title>
+//         <path d="M14.347 15.375 7.45 12.283l6.897-3.072v6.164zM24 0v24H0V0h24zm-4.705 5.386L5.672 11.548l-1.607.743 1.607.688 13.623 6.163v-1.565l-3.576-1.602V8.612l3.576-1.586v-1.64z" />
+//       </svg>
+//     );
+//   },
+// );
+// const SiAerospike: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+//   function SiAerospike({ title = 'Aerospike', color = 'currentColor', size = 24, ...others }, ref) {
+//     if (color === 'default') {
+//       color = defaultColor;
+//     }
+
+//     return (
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={size}
+//         height={size}
+//         fill={color}
+//         viewBox="0 0 24 24"
+//         ref={ref}
+//         {...others}
+//       >
+//         <title>{title}</title>
+//         <path d="M14.347 15.375 7.45 12.283l6.897-3.072v6.164zM24 0v24H0V0h24zm-4.705 5.386L5.672 11.548l-1.607.743 1.607.688 13.623 6.163v-1.565l-3.576-1.602V8.612l3.576-1.586v-1.64z" />
+//       </svg>
+//     );
+//   },
+// );
+// const SiAerospike: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+//   function SiAerospike({ title = 'Aerospike', color = 'currentColor', size = 24, ...others }, ref) {
+//     if (color === 'default') {
+//       color = defaultColor;
+//     }
+
+//     return (
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={size}
+//         height={size}
+//         fill={color}
+//         viewBox="0 0 24 24"
+//         ref={ref}
+//         {...others}
+//       >
+//         <title>{title}</title>
+//         <path d="M14.347 15.375 7.45 12.283l6.897-3.072v6.164zM24 0v24H0V0h24zm-4.705 5.386L5.672 11.548l-1.607.743 1.607.688 13.623 6.163v-1.565l-3.576-1.602V8.612l3.576-1.586v-1.64z" />
+//       </svg>
+//     );
+//   },
+// );
+// const SiAerospike: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+//   function SiAerospike({ title = 'Aerospike', color = 'currentColor', size = 24, ...others }, ref) {
+//     if (color === 'default') {
+//       color = defaultColor;
+//     }
+
+//     return (
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={size}
+//         height={size}
+//         fill={color}
+//         viewBox="0 0 24 24"
+//         ref={ref}
+//         {...others}
+//       >
+//         <title>{title}</title>
+//         <path d="M14.347 15.375 7.45 12.283l6.897-3.072v6.164zM24 0v24H0V0h24zm-4.705 5.386L5.672 11.548l-1.607.743 1.607.688 13.623 6.163v-1.565l-3.576-1.602V8.612l3.576-1.586v-1.64z" />
+//       </svg>
+//     );
+//   },
+// );
+// const SiAerospike: IconType = React.forwardRef<SVGSVGElement, SiCustomIconProps>(
+//   function SiAerospike({ title = 'Aerospike', color = 'currentColor', size = 24, ...others }, ref) {
+//     if (color === 'default') {
+//       color = defaultColor;
+//     }
+
+//     return (
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width={size}
+//         height={size}
+//         fill={color}
+//         viewBox="0 0 24 24"
+//         ref={ref}
+//         {...others}
+//       >
+//         <title>{title}</title>
+//         <path d="M14.347 15.375 7.45 12.283l6.897-3.072v6.164zM24 0v24H0V0h24zm-4.705 5.386L5.672 11.548l-1.607.743 1.607.688 13.623 6.163v-1.565l-3.576-1.602V8.612l3.576-1.586v-1.64z" />
+//       </svg>
+//     );
+//   },
+// );
+
+// export function SiCustomMatplotlib() {
+//   return (
+//     <svg width="180" height="180" stroke="gray" viewBox="0 0 180 180" fill="none">
+//       <g strokeWidth="10">
+//         <circle stroke="currentColor" cx="90" cy="90" r="88" />
+//         <circle stroke="currentColor" cx="90" cy="90" r="66" />
+//         <circle stroke="currentColor" cx="90" cy="90" r="44" />
+//         <circle stroke="currentColor" cx="90" cy="90" r="22" />
+//         <path stroke="currentColor" d="m90,2v176m62-26-124-124m124,0-124,124m150-62H2" />
+//       </g>
+//       <g opacity=".8">
+//         <path fill="currentColor" d="m90,90h18a18,18 0 0,0 0-5z" />
+//         <path fill="currentColor" d="m90,90 34-43a55,55 0 0,0-15-8z" />
+//         <path fill="currentColor" d="m90,90-16-72a74,74 0 0,0-31,15z" />
+//         <path fill="currentColor" d="m90,90-58-28a65,65 0 0,0-5,39z" />
+//         <path fill="currentColor" d="m90,90-33,16a37,37 0 0,0 2,5z" />
+//         <path fill="currentColor" d="m90,90-10,45a46,46 0 0,0 18,0z" />
+//         <path fill="currentColor" d="m90,90 46,58a74,74 0 0,0 12-12z" />
+//       </g>
+//     </svg>
+//   );
+// }
 
 export function SiCustomAnyLogic() {
   return (
@@ -74,3 +247,5 @@ export function SiCustomVisio() {
     </svg>
   );
 }
+
+export { SiCustomMatplotlib };
